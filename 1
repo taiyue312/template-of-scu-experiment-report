@@ -1,0 +1,100 @@
+#import "@preview/cuti:0.2.1": show-cn-fakebold
+#show: show-cn-fakebold
+
+#set page(
+  margin: (
+    left: 2.5cm,
+    right: 2.5cm,
+    top: 1.1cm,
+    bottom: 0.83cm
+  )
+)
+
+#set text(
+  22pt,font: "SimHei", 
+  lang: "zh", 
+  region: "cn"
+  )
+#align(center)[四川大学实验报告]
+
+#set text(
+18pt,font: "SimHei", 
+  lang: "zh", 
+  region: "cn"
+  )
+  学院~~~~~~~~~~
+  专~~~~业~~~~~~~~~~~~~~
+  级~~~班~~~组\
+\  
+  姓名~~~~~~~~~~
+  同实验者~~~~~~~~~~~~~~
+  年~~~月~~~日\
+*---------------------------------------------------------------------------*
+#set text(18pt,font:("Simsun"))
+*题目： ~这是题目~*
+//“~~~”是空格，自己调节标题位置，别问我为什么不用align。
+#set text(12pt,font:("Simsun"))
+#set heading(numbering: "一、") 
+= 实验原理
+- #lorem(25)
+- #lorem(25)
+- #lorem(25)
+= 实验目的
+- #lorem(25)
+- #lorem(25)
+- #lorem(25)
+- #lorem(25)
+= 实验材料
+- #lorem(25)
+- #lorem(25)
+- #lorem(25)
+- #lorem(25)
+= 实验内容
+
+#figure(
+  image("1.png",height:25%)
+  )
+
+#box(
+  height:150pt,
+  columns(3,gutter:20pt )[
+    #set par(justify: true)
+   #figure(
+      image("2.jpg",height: 78%),
+      )
+      #figure(
+      image("3.jpg",height: 80%)
+      )
+      #figure(
+      image("4.jpg",height: 80%)
+      )
+    ]
+    )
+
+= 思考
+#table(
+  columns: (5cm,3cm,5cm),
+  inset: 5pt,
+  align:center +horizon,
+  table.header(
+    [],
+    [],
+    [],
+  ),
+  table.cell(rowspan:  4)[],
+  [],[],
+  [],[],
+  [],[],
+  [],[],
+  
+  )
+= 作业
+
+
+
+
+
+
+
+
+
